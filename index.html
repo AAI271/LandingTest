@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /></head>
 <body>
 <header class="page-header">
     <div class="header-content">
@@ -19,11 +19,11 @@
         </label>
         <nav>
             <ul>
-                <li><a href="#">Homepage</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Prices</a></li>
-                <li><a href="#">Prices</a></li>
+                <li><a href="#process">Этапы</a></li>
+                <li><a href="#why-us">Почему мы</a></li>
+                <li><a href="#projects">Наши проекты</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="#map">Локация</a></li>
             </ul>
         </nav>
         <div class="page-shader"></div>
@@ -46,7 +46,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <div class="about__content">
                 <h3>
@@ -66,7 +66,43 @@
             </div>
         </div>
     </section>
-    <section class="why-us">
+    <section id="process" class="process">
+        <div class="container">
+            <div class="wrap">
+                <div class="viewbox">
+                    <ul class="step-nav">
+                        <li><a class="step-item active" data-step="0">x</a></li>
+                        <li><a class="step-item" data-step="1">x</a></li>
+                        <li><a class="step-item" data-step="2">xcx</a></li>
+                    </ul>
+                    <div class="steps">
+                        <div class="step active" data-step="1">
+                            <h3>Step 1</h3>
+                            <hr/>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis eveniet nemo similique, excepturi dignissimos, eligendi aspernatur aut tempora nobis odio distinctio voluptatibus dolores iusto, quos nostrum vero velit ea repellat?
+                        </div>
+
+                        <div class="step" data-step="2">
+                            <h3>Step 2</h3>
+                            <hr/>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos illo unde minima dolorum sequi totam earum ipsa voluptates magnam quaerat assumenda harum sit aut officiis voluptatem, illum reiciendis saepe aliquid.
+                        </div>
+
+                        <div class="step" data-step="3">
+                            <h3>Step 3</h3>
+                            <hr/>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos illo unde minima dolorum sequi totam earum ipsa voluptates magnam quaerat assumenda harum sit aut officiis voluptatem, illum reiciendis saepe aliquid.
+                        </div>
+
+                    </div> <!-- /steps -->
+
+                </div> <!-- /viewbox -->
+            </div> <!-- /wrap -->
+
+        </div>
+    </section>
+
+    <section id="why-us" class="why-us">
         <div class="container">
             <h3>
                 Работая с нами, вы можете быть<br/>
@@ -118,7 +154,7 @@
             </div>
         </div>
     </section>
-    <section class="projects">
+    <section id="projects" class="projects">
         <div class="container">
             <h3>Наши проекты</h3>
             <div id="wrapper">
@@ -239,10 +275,7 @@
             </div>
         </div>
     </section>
-    <section class="steps">
-
-    </section>
-    <section class="contacts">
+    <section id="contacts" class="contacts">
         <div class="container">
             <div class="contacts__content">
                 <h3>Хотите получить больше информации<br/>
@@ -267,21 +300,27 @@
                         Адрес нашего офиса:
                     </p>
                     <div>
-                        <img width="35" height="35" src="assets/place.svg" alt="">
+                        <span class="material-symbols-outlined">
+                            pin_drop
+                        </span>
                         <p>
                             г. Алматы,<br/>
                             ул.Муратбаева. д.23. оф.201.
                         </p>
                     </div>
                     <div>
-                        <img width="35" height="35" src="assets/email.svg" alt="">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
                         <p>
                             Напишите нам:<br/>
                             <a href="mailto:info@gazifikaciya.kz">info@gazifikaciya.kz</a>
                         </p>
                     </div>
                     <div>
-                        <img width="35" height="35" src="assets/phone-receiver.png" alt="">
+                        <span class="material-symbols-outlined">
+                            call
+                        </span>
                         <p>
                             Телефон:
                             <a class="li-adres-heavy" href="tel:77273546275">+7 (727) 354-62-75</a>
@@ -291,7 +330,7 @@
                 </div>
         </div>
     </section>
-    <section class="map">
+    <section id="map" class="map">
             <iframe src="https://yandex.com/map-widget/v1/?um=constructor%3Ae715dd32e2a0d248588d553f2a6ed6afa0aa49b60e8712ce7ad6550ce07ab5ed&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>
     </section>
 </main>
@@ -299,10 +338,11 @@
     <div class="container">
         <div class="footer__logo">
             <div class="logo">
-                <img width="100" height="100" src="assets/logo.png" alt="logo" />
+                <img width="150" src="assets/logo.png" alt="logo" />
             </div>
-            <p>*******************************!</p>
+            <p>Новый уровень комфорта и экономии с газом в вашем доме!</p>
         </div>
+        <hr/>
         <div class="footer__link-list">
             <li><a href="#">Homepage</a></li>
             <li><a href="#">About</a></li>
@@ -310,23 +350,30 @@
             <li><a href="#">Prices</a></li>
             <li><a href="#">Prices</a></li>
         </div>
+        <hr/>
         <div class="footer__contacts">
             <div>
-                <img width="35" height="35" src="assets/place.svg" alt="">
+                <span class="material-symbols-outlined">
+                    pin_drop
+                </span>
                 <p>
-                    г. Алматы,<br/>
+                    г. Астана,
                     ул.Муратбаева. д.23. оф.201.
                 </p>
             </div>
             <div>
-                <img width="35" height="35" src="assets/email.svg" alt="">
+                <span class="material-symbols-outlined">
+                    mail
+                </span>
                 <p>
-                    Напишите нам:<br/>
+                    Почта:
                     <a href="mailto:info@gazifikaciya.kz">info@gazifikaciya.kz</a>
                 </p>
             </div>
             <div>
-                <img width="35" height="35" src="assets/phone-receiver.png" alt="">
+                <span class="material-symbols-outlined">
+                    call
+                </span>
                 <p>
                     Телефон:
                     <a class="li-adres-heavy" href="tel:77273546275">+7 (727) 354-62-75</a>

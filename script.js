@@ -45,11 +45,56 @@ function reveal() {
         var elementVisible = 150;
 
         if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("active");
+            reveals[i].classList.add("container-active");
         } else {
-            reveals[i].classList.remove("active");
+            reveals[i].classList.remove("container-active");
         }
     }
 }
 reveal()
 window.addEventListener("scroll", reveal);
+
+
+
+
+
+
+//process
+let stepItems = document.querySelectorAll('.step-item');
+let stepWidth = document.querySelectorAll('.step')[0].offsetWidth;
+console.log(stepItems[0])
+console.log(stepItems[0].offsetWidth)
+let numSteps = stepItems.length - 1;
+
+function jumpToStep(step) {
+    document.querySelector('.steps').style.left = -(step * stepWidth) + 'px';
+    document.querySelector('.step-item.active').classList.toggle('active');
+    document.querySelector('.step-item[data-step="'+ step +'"]').classList.toggle('active');
+}
+
+document.querySelectorAll('a[data-step]').forEach(link => {
+    link.addEventListener('click', function(e) {
+        jumpToStep(this.dataset.step);
+    });
+});
+
+document.addEventListener('keydown', function(e) {
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+    let activeStep = document.querySelector('.step-item.active').dataset.step;
+    switch(e.which) {
+        case 37: // left
+            console.log(activeStep);
+            if (activeStep > 0) {
+                jumpToStep(activeStep - 1);
+                return;
+            }
+
+        case 39: // right
+            if (activeStep < numSteps) {
+                jumpToStep(parseInt(activeStep) + 1);
+                return;
+            }
+
+        default: return; // exit this handler for other keys
+    }
+});

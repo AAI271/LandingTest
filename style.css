@@ -4,10 +4,15 @@
     box-sizing: border-box;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #eeeeee;
 }
-
+.distance{
+    height: 6rem;
+}
 .container{
     max-width: 80vw;
     width: 100%;
@@ -59,6 +64,9 @@ h5{
     border-radius: 5px;
 }
 
+.whatsapp{
+    text-decoration: none;
+}
 .btn span {
     position: relative;
     z-index: 1;
@@ -139,7 +147,7 @@ h5{
 .page-header > .header-content > .hamburger > .line {
     width: 100%;
     height: 0.15rem;
-    background: #000;
+    background: white;
 }
 .page-header > .header-content > nav {
     position: absolute;
@@ -253,7 +261,7 @@ h5{
 /*welcome*/
 .welcome{
     min-height: 750px;
-    background: url("assets/welcome-bg.jpg");
+    background-image: url("assets/welcome-bg.jpg");
     background-size: cover;
     display: flex;
     align-items: center;
@@ -307,6 +315,9 @@ h5{
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 50px 0;
+}
+.card-list h5{
+    padding: 10px 0;
 }
 .card{
     width: 300px;
@@ -439,8 +450,11 @@ h5{
     border-radius: 10px;
     background-color: white;
 }
+.contacts__box h3{
+    font-size: 25px;
+}
 .contacts__box div{
-    padding: 15px 0;
+    padding: 25px 0;
     display: flex;
     font-size: 17px;
     align-items: center;
@@ -540,6 +554,9 @@ footer{
     margin: 100px 0;
     background-color: #ffba00;
 }
+.process h3{
+    padding-top: 50px;
+}
 .wrap {  padding: 2rem; }
 
 .viewbox {
@@ -615,6 +632,9 @@ footer{
     .about img{
         display: none;
     }
+    .why-us .container{
+        text-align: center;
+    }
     .contacts{
         max-height: 1500px;
         height: 100%;
@@ -665,6 +685,7 @@ footer{
     }
     .projects img{
         width: 40vw;
+        height: 100px;
     }
     .contacts__box{
         padding: 20px;

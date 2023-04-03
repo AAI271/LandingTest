@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
+
 #whatsapp-btn {
     z-index: 5;
     position: fixed;
@@ -88,8 +89,8 @@ body{
     height: 6rem;
 }
 .container{
-    max-width: 80vw;
-    width: 100%;
+    max-width: 1270px;
+    width: 80vw;
     margin: 0 auto;
     transform: translateY(100px);
     opacity: 0;
@@ -387,7 +388,7 @@ h5{
 .card-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 50px 0;
 }
 .card-list h5{
@@ -569,7 +570,7 @@ footer{
     margin-top: 50px;
     background-color: #272c4c;
     position: relative;
-    color: white;
+    color: #fff;
     overflow: hidden;
 }
 .footer hr{
@@ -623,75 +624,10 @@ footer{
 }
 
 
-/*process*/
-.process{
-    margin-bottom: 100px;
-    background-color: #ffba00;
-}
-.process h3{
-    padding-top: 50px;
-}
-.wrap {  padding: 2rem; }
 
-.viewbox {
-    margin: 0 auto;
-    overflow-x: hidden;
-    width: 75vw;
-    border-radius:0 0 5px 5px;
-}
-
-.steps {
-    background-color: white;
-    min-height: 200px;
-    display: flex;
-    width: 300vw;
-    position: relative;
-    left: 0;
-    transition: left 0.5s ease-in-out;
-    overflow: hidden;
-}
-
-.step  {
-    width: 100%;
-    padding: 20px;
-}
-
-.step p{
+.services .card-list h5{
     line-height: 20px;
 }
-
-.step-nav {
-    list-style: none;
-    padding-left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width:100%;
-}
-.step-nav .step-item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 3rem;
-    width: 100%;
-    background-color: #ddd;
-    text-align: center;
-    color: black;
-    margin-right: 1rem;
-    transition: background-color 0.5s;
-}
-.step-nav li{
-    width:100%;
-}
-.step-item.active {
-    background-color:#4555b9;
-    color: white;
-}
-.step hr{
-    width: 95%;
-    margin: 20px 0;
-}
-
 
 @media screen and (max-width: 1080px){
     .container{
@@ -791,4 +727,10 @@ footer{
         width: 100vw;
         text-align: center;
     }
+    .footer__link-list{
+        height: 100%;
+    }
+}
+.width{
+    width: 60px !important;
 }

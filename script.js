@@ -29,7 +29,7 @@ window.addEventListener("resize", e => (width = carousel.offsetWidth));
 
 
 function reveal() {
-    var reveals = document.querySelectorAll(".container");
+    let reveals = document.querySelectorAll(".container");
     let header = document.querySelector("header");
     let welcome = document.querySelector("#welcome");
 
@@ -39,10 +39,10 @@ function reveal() {
     else{
         header.classList.remove("scrolled")
     }
-    for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 150;
+    for (let i = 0; i < reveals.length; i++) {
+        let windowHeight = window.innerHeight;
+        let elementTop = reveals[i].getBoundingClientRect().top;
+        let elementVisible = 150;
 
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("container-active");

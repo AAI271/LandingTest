@@ -62,8 +62,6 @@ window.addEventListener("scroll", reveal);
 //process
 let stepItems = document.querySelectorAll('.step-item');
 let stepWidth = document.querySelectorAll('.step')[0].offsetWidth;
-console.log(stepItems[0])
-console.log(stepItems[0].offsetWidth)
 let numSteps = stepItems.length - 1;
 
 function jumpToStep(step) {

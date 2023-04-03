@@ -98,3 +98,11 @@ document.addEventListener('keydown', function(e) {
         default: return; // exit this handler for other keys
     }
 });
+
+const whatsappBtn = document.getElementById("whatsapp-btn");
+const panel = document.getElementById("panel");
+
+whatsappBtn.addEventListener("click", () => {
+    whatsappBtn.classList.toggle("active");
+    panel.classList.toggle("active");
+});

@@ -570,7 +570,7 @@ footer{
     background-color: white;
     min-height: 200px;
     display: flex;
-    width: 225vw;
+    width: 300vw;
     position: relative;
     left: 0;
     transition: left 0.5s ease-in-out;
@@ -580,6 +580,10 @@ footer{
 .step  {
     width: 100%;
     padding: 20px;
+}
+
+.step p{
+    line-height: 20px;
 }
 
 .step-nav {
@@ -682,6 +686,11 @@ footer{
     }
     .card-list{
         justify-content: center;
+    }
+    .step-nav {
+        flex-direction: column;
+        justify-content: center;
+        width:100%;
     }
     .projects img{
         width: 40vw;

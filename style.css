@@ -203,9 +203,9 @@ h5{
 .logo{
     z-index: 5;
 }
+
 .page-header > .header-content .logo > img {
     object-fit: cover;
-    padding-top: 10px;
 }
 .page-header > .header-content > #hamburger-checkbox {
     display: none;
